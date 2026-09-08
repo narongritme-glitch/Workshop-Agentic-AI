@@ -3,7 +3,7 @@ main = "src/index.ts"
 compatibility_date = "2026-08-01"
 compatibility_flags = ["nodejs_compat"]
 
-# หน้าเว็บ static (Chat / Key settings / MCP settings) — เสิร์ฟตรงจากโฟลเดอร์นี้
+# หน้าเว็บ static — เสิร์ฟตรงจากโฟลเดอร์นี้
 # path ที่ไม่ตรงกับไฟล์ในนี้ (เช่น /api/*, /mcp/*, /telegram/*) จะตกไปที่ src/index.ts ให้อัตโนมัติ
 [assets]
 directory = "./public"
@@ -16,10 +16,7 @@ binding = "APP_KV"
 id = "5d01ca2765eb4872b111eeb512a2c1f2"
 
 # Secret จริงทั้งหมดต่อไปนี้ ห้ามใส่ในไฟล์นี้เด็ดขาด — ตั้งผ่าน `npx wrangler secret put <ชื่อ>` เท่านั้น
-# (เข้ารหัสเก็บฝั่ง Cloudflare) รายชื่อที่ต้องตั้ง ดู SETUP.md:
-#   ADMIN_TOKEN, GEMINI_API_KEY, OPENAI_API_KEY, OPENAI_COMPAT_API_KEY,
-#   GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET, GOOGLE_REFRESH_TOKEN,
-#   TELEGRAM_BOT_TOKEN, TELEGRAM_WEBHOOK_SECRET
+# (เข้ารหัสเก็บฝั่ง Cloudflare): GEMINI_API_KEY, OPENAI_API_KEY, OPENAI_COMPAT_API_KEY
 
 [vars]
 # ค่า config ทั่วไปที่ไม่ใช่ความลับ ใส่ตรงนี้ได้ แก้ default model ได้จากตรงนี้จุดเดียว
